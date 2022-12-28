@@ -1,0 +1,35 @@
+$color-primary: #2b3a67;
+$color-additional: #ffffff;
+
+@mixin button {
+  font-family: 'Ruda', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  border: 1px solid #496a81;
+  box-sizing: border-box;
+  border-radius: 0px 3px 3px 0px;
+  font-size: 2.4rem;
+  line-height: 125%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  height: 5rem;
+  width: 160px;
+}
+
+.btn_primary {
+  @include button;
+  color: #ffffff;
+  background-color: #2b3a67;
+}
+
+.btn_add {
+  @include button;
+  color: #2b3a67;
+  background-color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn_primary:hover,
+.btn_add:hover {
+  transform: translateY(-3px);
+}

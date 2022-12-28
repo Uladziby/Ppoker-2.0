@@ -1,0 +1,99 @@
+@import '../../common/fonts.scss';
+.session-title {
+  min-height: 30rem;
+  &__buttons {
+    position: relative;
+    margin-top: 20px;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 50px;
+  }
+  &__button-exit {
+    position: absolute;
+    right: 0;
+  }
+}
+
+.headder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 5px 10px;
+  margin-top: 20px;
+  &__text,
+  &__input {
+    @include font-Ruda-24;
+    word-break: break-all;
+    max-height: 1.2em;
+    overflow: hidden;
+  }
+  &__input {
+    border: none;
+    border-bottom: 3px solid black;
+    width: max-content;
+    @include font-Roboto-24;
+    width: 80%;
+  }
+  &__button {
+    height: 24px;
+    width: 24px;
+    margin-left: 20px;
+    background-color: white;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+    &_ok {
+      height: 30px;
+      width: 50px;
+      background-image: none;
+      @include font-Ruda-24;
+      line-height: 115%;
+      color: yellow;
+      border: 3px solid black;
+      border-radius: 15px;
+    }
+  }
+  &__icon {
+    height: 2.4rem;
+    width: 2.4rem;
+    object-fit: fill;
+  }
+  &__warning {
+    position: absolute;
+    top: 5px;
+    color: red;
+    @include font-Roboto-24;
+  }
+}
+.scram-master {
+  margin-top: 20px;
+  &__text {
+    padding: 0 2rem;
+
+    @include font-Ruda-24;
+  }
+}
+.link-lobby {
+  margin-top: 5px;
+  padding: 0 2rem;
+  &__text {
+    @include font-Roboto-24;
+  }
+  &__input {
+    
+    display: flex;
+    align-items: center;
+  }
+  &__copy-confirm {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -15px;
+    left: 15px;
+  }
+}

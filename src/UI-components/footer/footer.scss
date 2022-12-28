@@ -1,0 +1,56 @@
+.footer {
+  position: absolute;  
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  background-color: #2b3a67;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  width: 100%;
+  bottom: 0;
+  &__git {
+    display: flex;
+    flex-direction: column;
+    &-title {
+    font-size: 2em;
+  }
+    &-container {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 7px;
+    }
+    &-link {
+      display: block;
+      color: #66999b;
+      font-style: italic;
+      margin-right: 5px;
+    }
+  }
+  &__logo-rss {
+    display: block;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    height: 30px;
+    background-image: url('../../assets/icons/rss.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-right: 100px;
+    &-year {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      font-size: 21px;
+      letter-spacing: -2px;
+      color: #cbd5de;
+      line-height: 0.9;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    &:hover .footer__logo-rss-year {
+      right: -5px;
+      letter-spacing: 0;
+    }
+  }
+}

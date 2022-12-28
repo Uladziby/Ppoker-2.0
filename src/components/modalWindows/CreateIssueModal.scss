@@ -1,0 +1,69 @@
+@mixin font-size24 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.container_createIssue {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.createIssue {
+  &__title {
+    padding: 0 15rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem 3rem;
+    &_inputs {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+      & > label,
+      > input {
+        flex: 1 1 43%;
+        margin: 4.7rem 0rem;
+      }
+      &_block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    &_buttons {
+      padding: 22rem 0 0 0;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+.container_drop-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error_validate {
+  color: #ffc482;
+  margin: 0;
+  @include font-size24;
+}
+.connection {
+  font-size: 12px;
+  position: relative;
+  top: -15px;
+  left: 15px;
+}

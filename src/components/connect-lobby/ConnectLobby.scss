@@ -1,0 +1,72 @@
+@import '../../pages/StartPage/StartPage.scss';
+
+.connectLobby {
+  width: 100%;
+  &__title {
+    display: flex;
+    justify-content: center;
+    & > h3 {
+      font-size: 64px;
+      flex: 3;
+    }
+    &-right {
+      display: flex;
+      flex: 1;
+      justify-content: space-between;
+      align-items: center;
+      label {
+        @include label_font();
+      }
+    }
+  }
+  &__register {
+    display: flex;
+    flex-direction: column;
+    &-form {
+      display: flex;
+      flex-direction: column;
+
+      & > label,
+      & > .inputElem {
+        padding: 1rem 0;
+
+        width: 46.7rem;
+      }
+      & > .inputElem {
+        padding: 1rem 0;
+      }
+
+      &_image {
+        padding-top: 1rem;
+        &-choose {
+          display: flex;
+          & > #output_text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #2b3a67;
+            font-family: Roboto;
+            font-size: 24px;
+            width: 22.5rem;
+            height: 47px;
+            background: #ffffff;
+            border: 1px solid #eeeeee;
+            box-sizing: border-box;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 0px 0px 0px 10px;
+          }
+        }
+        & > img {
+          padding-top: 1.5rem;
+        }
+      }
+      &_buttons {
+        padding: 10rem 0 0 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+}

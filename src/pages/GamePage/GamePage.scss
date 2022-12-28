@@ -1,0 +1,194 @@
+@import '../../common/fonts.scss';
+
+.wrapper_game {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  width: 80%;
+}
+.game {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.game_field {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 0 6.3rem;
+  padding-bottom: 80px;
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 5px 10px;
+    margin-top: 20px;
+    &-text {
+      text-align: center;
+      font-family: Ruda;
+      font-weight: 700;
+      font-size: 2.4rem;
+      line-height: 125%;
+      word-break: break-all;
+      max-height: 1.2em;
+      overflow: hidden;
+    }
+  }
+  &__scram {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    &_title {
+      font-size: 1.2rem;
+     @include font-Ruda-24-700;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #00000099;
+    }
+    &_main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+  }
+  &__playArea {
+    margin-top: 2rem;
+
+    padding-top: 6.3rem;
+    display: flex;
+    flex-direction: row;
+
+    &_issues {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      &-title {
+        @include font-Ruda-24-700;
+      }
+      &-list > .custom_issue {
+        height: 78px;
+      }
+    }
+    &_timer {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      & > .container_timer {
+        margin-top: 2rem;
+      }
+      & > .btn_primary {
+        margin-top: 3.3rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    &_nextIssue {
+      flex: 1;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+.score_field {
+  flex: 1;
+  background-color: aqua;
+}
+
+.statistics {
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  &_title {
+    padding: 3rem 0;
+    @include font-Ruda-24-700;
+  }
+  &_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    &-card {
+      flex-wrap: wrap;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+    }
+    &-results {
+      transform: scale(0.8);
+      display: flex;
+
+      &_item {
+        padding: 1.5rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        &_item {
+          flex: 1 10%;
+          padding: 1.5rem;
+          display: flex;
+          @include font-Ruda-24;
+        }
+        &_card {
+          flex: 1 10%;
+          & > .custom-card:hover {
+            animation: none;
+          }
+          & > .current-card {
+            background-color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.score {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 2rem 1.5rem 2rem 3.6rem;
+  &_titles {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 3rem;
+    align-items: center;
+  }
+  &_players {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    &__points {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1.5rem;
+      margin: 1rem;
+      border-radius: 5px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      box-sizing: border-box;
+     @include font-Ruda-24-700;
+      letter-spacing: 0em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    &__member>.player-card {
+      margin: 1rem;
+      width: 215px;
+    }
+  }
+}
+
+.current-card {
+  background-color: rgba($color: #60dabf54, $alpha: 0.33);
+}

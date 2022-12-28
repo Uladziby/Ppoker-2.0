@@ -1,0 +1,87 @@
+h1 {
+  font-family: Roboto, sans-serif;
+  font-size: 7rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 8.2rem;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+}
+
+h3 {
+  color: #66999b;
+  font-family: Roboto;
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 5.6rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+@mixin label_font {
+  font-family: Roboto;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 2.8rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.wrapper_startPage {
+  margin: 0 22rem;
+    display: flex;
+    min-height: 88vh;
+    width: 80%;
+}
+
+.content_startPage {
+  width: 100%;
+  padding: 13.2rem 0 23rem 0;
+}
+
+.startPage {
+  padding: 2.7rem;
+
+  &_title {
+    display: flex;
+    justify-content: center;
+
+    &-cards {
+        padding: 0 2.7rem;
+    }
+
+    &-naming {
+      position: relative;
+      flex-direction: column;
+      background: url(../../assets/icons/Line.svg) center no-repeat;
+      background-size: cover;
+    }
+   
+    &-naming > :last-child {
+      display: flex;
+      justify-content: flex-end;
+      padding-left: 16.8rem;
+    }
+  }
+  &_newGame {
+    padding: 0 2.8rem;
+
+    &-fieldCreate > label {
+      @include label_font();
+      padding-right: 16rem;
+    }
+  }
+  &_connect {
+    padding: 2.7rem;
+    &-fieldCreate {
+      display: flex;
+      flex-direction: column;
+      label {
+        @include label_font();
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+@import '../../pages/StartPage/StartPage.scss';
+@import '../../common/fonts.scss';
+
+.connectLobby {
+  width: 100%;
+  &__title {
+    display: flex;
+    justify-content: center;
+    height: 17rem;
+    & > h3 {
+      font-size: 6.4rem;
+      flex: 3;
+    }
+    &-right {
+      display: flex;
+      flex: 1;
+      justify-content: space-between;
+      align-items: center;
+      label {
+        @include label_font();
+      }
+    }
+  }
+  &__register {
+    display: flex;
+    flex-direction: column;
+    &-form {
+      display: flex;
+      flex-direction: column;
+      &_block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & > .inputElem {
+          padding: 1rem;
+          width: 46.7rem;
+        }
+      }
+      & > label {
+        padding: 1rem 0;
+        width: 46.7rem;
+      }
+
+      &_image {
+        padding-top: 1rem;
+        &-choose {
+          padding-bottom: 1.5rem;
+          display: flex;
+          & > #output_text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #2b3a67;
+            @include font-Roboto-24-700;
+            font-weight: 300;
+            background: #ffffff;
+            border: 1px solid #eeeeee;
+            box-sizing: border-box;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 0px 0px 0px 10px;
+          }
+        }
+        &-img {
+          display: flex;
+          align-items: center;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background: #60dabf;
+          margin-right: 20px;
+          & > #shortNameUser {
+            position: absolute;
+            text-transform: uppercase;
+            left: 5.6rem;
+          }
+        }
+      }
+      &_buttons {
+        padding: 5rem 0 0 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+.error_validate {
+  color: #ffc482;
+  margin: 0;
+  @include font-Roboto-24-700;
+}
+.connection {
+  @include font-Roboto-24;
+  color: #ffc482;
+}
+
+#shortNameUser {
+  color: #ffffff;
+  @include font-Roboto-24;
+}

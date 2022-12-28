@@ -1,0 +1,56 @@
+@import '../../common/fonts.scss';
+.drop-down {
+  @include font-Roboto-24;
+  display: flex;
+  padding: 0rem 65px;
+  cursor: pointer;
+  background: #ffffff;
+  box-sizing: border-box;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 0px 0px 0px 10px;
+  padding-left: 10px;
+  padding-top: 8px;
+}
+.selected-option {
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  width: 200px;
+  padding-left: 10px;
+  padding-top: 8px;
+}
+
+.options {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  width: 100%;
+}
+
+.option {
+  box-sizing: border-box;
+  height: 3rem;
+  width: 200px;
+  border-top: 1px solid black;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-top: 8px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.triangle {
+  padding: 10px;
+}

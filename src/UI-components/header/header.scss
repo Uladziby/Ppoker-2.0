@@ -1,0 +1,37 @@
+.header {
+  position: relative;
+  height: 70px;
+  width: 100%;
+  &__top {
+    display: flex;
+    justify-content: flex-end;
+    height: 50px;
+    background-color: #2b3a67;
+  }
+  &__bottom {
+    height: 20px;
+    background: #66999b;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  &__logo {
+    position: absolute;
+    top: 19px;
+    left: 65px;
+    height: 70px;
+    width: 70px;
+    background-image: url('../../assets/icons/logo.png');
+    background-size: contain;
+  }
+}
+
+.btn_chat{
+  display: flex;
+    align-items: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0 4rem;
+}
+.btn_chat:hover{
+  transform:scale(1.6);
+}

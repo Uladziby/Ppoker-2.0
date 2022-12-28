@@ -1,0 +1,46 @@
+@import '../../common/fonts.scss';
+
+.results {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 84vh;
+  width: 80%;
+  &_title {
+    @include font-Ruda-24;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 2rem;
+  }
+  &_content {
+    display: flex;
+    flex-direction: column;
+    padding: 6rem 4.8rem;
+    &__round {
+        display: flex;
+        flex-direction: column;
+      &_issueTitle {
+        width: 100%;
+      }
+      &_cards{
+          display: flex;
+          flex-direction: row;
+        &_card>.custom-card:hover{
+            animation: none;
+        }
+        &_card>.custom-card.selected-card{
+          background-color: white;
+      }
+        }
+    }
+  }
+  button {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+  }
+}
+.footer{
+    position: relative;
+}

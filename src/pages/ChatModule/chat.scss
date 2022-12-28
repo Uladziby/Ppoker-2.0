@@ -1,0 +1,116 @@
+@import '../../common/fonts.scss';
+
+.chatbar {
+  border-radius: 0px 0px 0px 10px;
+  height: 80vh;
+  display: flex;
+  width: 20%;
+  background: transparent;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.5s ease-in-out;
+  left: 0;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 0 1rem black;
+  &_list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    a {
+      text-decoration: none;
+      color: #0cf;
+    }
+  }
+}
+
+.chatbar.disabled {
+  left: 25%;
+  width: 0%;
+  & > .chat {
+    display: none;
+  }
+}
+
+.chat {
+  
+  height: 71vh;
+  overflow: auto;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  &_title {
+    @include font-Ruda-24;
+  }
+  &_row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 95%;
+
+    &__msg {
+      overflow: auto;
+      display: flex;
+      flex-direction: column;
+      width: fit-content;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      border-radius: 5px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      width: 50%;
+      padding: 1rem;
+      &_text {
+        line-break: anywhere;
+        word-break: break-all;
+        @include font-Ruda-24;
+        font-size: 1.8rem;
+        font-weight: 400;
+      }
+    }
+    &__user {
+      @include font-Ruda-24;
+      & > .player-card {
+        width: fit-content;
+        height: 6rem;
+        & > .player-card__photo-container {
+          width: 30px;
+          height: 30px;
+          margin-right: 5px;
+        }
+        & > .player-card__text-container {
+          .player-card__name {
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+  &_control {
+    display: flex;
+    flex-wrap: nowrap;
+
+    padding-top: 2rem;
+    & > form {
+      display: flex;
+      width: 100%;
+    }
+    & > form > input {
+      width: 100%;
+      border: 1px solid #2b3a67;
+      font-family: Roboto;
+      @include font-Ruda-24;
+      font-size: 1.8rem;
+      padding-left: 10px;
+      background: #ffffff;
+      box-sizing: border-box;
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.5);
+      border-radius: 0px 0px 0px 10px;
+    }
+    &_btn {
+      color: $color-white;
+      background-color: $color-primary;
+    }
+  }
+}

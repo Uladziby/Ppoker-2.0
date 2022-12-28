@@ -1,0 +1,71 @@
+@mixin font-Ruda-24{
+  font-family: Ruda;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3rem;
+  letter-spacing: 0em;
+  text-align: center;
+}
+@mixin font-Ruda-24-400 {
+  font-family: Ruda;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3rem;
+  letter-spacing: 0em;
+  text-align: center;
+}
+@mixin font-Ruda-24-700 {
+  font-family: Ruda;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3rem;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+@mixin font-Roboto-24 {
+  font-family: Roboto;
+  font-size: 2.4rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 2.8rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+@mixin font-Roboto-24-400 {
+  font-family: Roboto;
+  font-size: 2.4rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 2.8rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+@mixin font-Roboto-24-700 {
+  font-family: Roboto;
+  font-size: 2.4rem;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 2.8rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+ @mixin font-Roboto-64-700 {
+  font-family: Roboto;
+  font-size: 6.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 7.5rem;
+  letter-spacing: 0em;
+  text-align: left;
+ }
+
+
+
+$color-primary: #2b3a67;
+$color-white: #ffff;
+$color-additionally: #ffc482;
