@@ -4,6 +4,5 @@ is a consensus-based, gamified technique for estimating, mostly used to estimate
 Technologies have been used such as React, Redux, Websocket, Express.
 
 link repository server: https://github.com/Uladziby/Ppoker-2.0-server
-deploy front :https://github.com/Uladziby/Ppoker-2.0-server
 
 ### short-presentation : https://www.youtube.com/watch?v=jI5VTGnHI4k
